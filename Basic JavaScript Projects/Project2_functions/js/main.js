@@ -17,3 +17,6 @@ function concatFunction() {
     sentence += "is very important!"; //This string will be concatenated using the += operator 
     document.getElementById("my_paragraph_2").innerHTML = sentence; //Assigning the second <p> id to a variable
 }
+
+var ele = document.getElementsByTagName("p");
+console.log(ele);
