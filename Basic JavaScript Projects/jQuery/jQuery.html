@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+    <script>
+        $(document).ready(function() {
+            //Once the webpage is loaded, the following HTML code is added
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                            <button id='show'>Show</button>\
+                            <br>\
+                            <br>\
+                            <br>\
+                            <br>\
+                            <br>\
+                            <br>\
+                            <br>\
+                            <br>\
+                            <br>\
+                            <br>\
+                            <p id='4'>Paragraph 4</p>\
+                        </div>\
+                    </div>\
+                </body>"            
+            );
+//changes the CSS properties of the <p> tag with the ID '2'
+            $("#2").css({"color":"red"}); 
+
+//hides the text of the <h1>tag when the user clicks the <p> tag with the ID '3'      
+            $("#3").click(function() {
+                $("h1").hide();
+            });
+//alert will pop up when user hovers over the <p> tag with the ID '4'
+            $("#4").hover(function(){
+                alert("Hello!");
+            },
+            function() {
+                alert("Goodbye!");
+            });
+
+//when the user clicks on the button, the previously hidden text of the <h1> will appear            
+            $("#show").click(function(){
+                $("h1").show();
+            });
+        });
+
+
+
+    </script>
+
+
+
+<body>
+
+    
+</body>
+</html>
